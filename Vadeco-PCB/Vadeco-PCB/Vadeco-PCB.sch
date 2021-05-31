@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Vadeco"
 Date "2021-05-30"
-Rev "01"
+Rev "02"
 Comp "Robotech"
 Comment1 "Dev.: José Neto"
 Comment2 ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Module:Arduino_Nano_v3.x A1
+L Vadeco-PCB-rescue:Arduino_Nano_v3.x-MCU_Module A1
 U 1 1 60B30CF3
 P 5850 4700
 F 0 "A1" H 5000 5750 50  0000 C CNN
@@ -30,13 +30,13 @@ U 1 1 60B41B41
 P 2700 5550
 F 0 "U1" H 2757 5875 50  0000 C CNN
 F 1 "Microstart_Remote" H 2757 5784 50  0000 C CNN
-F 2 "" H 2900 5550 50  0001 C CNN
+F 2 "Module:MICROSTART_MODULE" H 2900 5550 50  0001 C CNN
 F 3 "" H 2900 5550 50  0001 C CNN
 	1    2700 5550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:LM2596_ADJ U2
+L Vadeco-PCB-rescue:LM2596_ADJ-Regulator_Switching U2
 U 1 1 60B30F55
 P 6200 2800
 F 0 "U2" H 6200 3075 50  0000 C CNN
@@ -141,7 +141,7 @@ U 1 1 60B7AACA
 P 3200 6950
 F 0 "U4" H 3200 7475 50  0000 C CNN
 F 1 "LEFT_TB6612FNG" H 3200 7384 50  0000 C CNN
-F 2 "" H 3000 6950 50  0001 C CNN
+F 2 "Module:TB6612FNG" H 3000 6950 50  0001 C CNN
 F 3 "" H 3000 6950 50  0001 C CNN
 	1    3200 6950
 	1    0    0    -1  
@@ -382,4 +382,5 @@ Wire Notes Line style solid
 	4350 2400 4350 3000
 Wire Notes Line style solid
 	7100 2400 7100 3000
+NoConn ~ 5350 5400
 $EndSCHEMATC

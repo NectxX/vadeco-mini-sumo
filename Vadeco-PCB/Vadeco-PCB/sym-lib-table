@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Vadeco-PCB-rescue)(type Legacy)(uri ${KIPRJMOD}/Vadeco-PCB-rescue.lib)(options "")(descr ""))
+)
