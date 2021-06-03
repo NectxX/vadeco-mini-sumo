@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Vadeco"
-Date "2021-05-30"
-Rev "02"
+Date "2021-06-02"
+Rev "03"
 Comp "Robotech"
 Comment1 "Dev.: José Neto"
 Comment2 ""
@@ -112,17 +112,17 @@ F 3 "~" H 2650 4250 50  0001 C CNN
 	1    2650 4250
 	-1   0    0    -1  
 $EndComp
-Text GLabel 2850 4150 2    50   Input ~ 0
+Text GLabel 2850 4250 2    50   Input ~ 0
 5V_ARDUINO
-Text GLabel 2850 3500 2    50   Input ~ 0
+Text GLabel 2850 3600 2    50   Input ~ 0
 5V_ARDUINO
-Text GLabel 2850 3600 2    50   UnSpc ~ 0
+Text GLabel 2850 3500 2    50   UnSpc ~ 0
 GND
-Text GLabel 2850 4250 2    50   UnSpc ~ 0
+Text GLabel 2850 4150 2    50   UnSpc ~ 0
 GND
-Text GLabel 2850 4450 2    50   Output ~ 0
+Text GLabel 2850 4350 2    50   Output ~ 0
 ANALOG_LINE2
-Text GLabel 2850 3800 2    50   Output ~ 0
+Text GLabel 2850 3700 2    50   Output ~ 0
 ANALOG_LINE1
 $Comp
 L Driver_Motor:DRIVER_TB6612FNG U3
@@ -178,24 +178,16 @@ F 3 "~" H 8000 4550 50  0001 C CNN
 	1    8000 4550
 	-1   0    0    -1  
 $EndComp
-Text GLabel 8200 3500 2    50   Input ~ 0
+Text GLabel 8200 4850 2    50   Input ~ 0
 5V_ARDUINO
-Text GLabel 8200 4350 2    50   Input ~ 0
-5V_ARDUINO
-Text GLabel 8200 3600 2    50   UnSpc ~ 0
+Text GLabel 8200 4550 2    50   UnSpc ~ 0
 GND
-Text GLabel 8200 4450 2    50   UnSpc ~ 0
-GND
-Text GLabel 8200 3700 2    50   Input ~ 0
+Text GLabel 8200 4750 2    50   Input ~ 0
 SCL_VL53L0X
-Text GLabel 8200 4550 2    50   Input ~ 0
-SCL_VL53L0X
-Text GLabel 8200 3800 2    50   BiDi ~ 0
-SDA_VL53L0X
 Text GLabel 8200 4650 2    50   BiDi ~ 0
 SDA_VL53L0X
 NoConn ~ 8200 3900
-NoConn ~ 8200 4750
+NoConn ~ 8200 4450
 Text GLabel 8200 4000 2    50   Input ~ 0
 DISTANCE_01
 $Comp
@@ -210,17 +202,17 @@ F 3 "~" H 8000 5400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 NoConn ~ 8200 5600
-Text GLabel 8200 4850 2    50   Input ~ 0
+Text GLabel 8200 4350 2    50   Input ~ 0
 DISTANCE_02
 Text GLabel 8200 5700 2    50   Input ~ 0
 DISTANCE_03
-Text GLabel 8200 5200 2    50   Input ~ 0
-5V_ARDUINO
-Text GLabel 8200 5300 2    50   UnSpc ~ 0
-GND
 Text GLabel 8200 5400 2    50   Input ~ 0
+5V_ARDUINO
+Text GLabel 8200 5500 2    50   UnSpc ~ 0
+GND
+Text GLabel 8200 5300 2    50   Input ~ 0
 SCL_VL53L0X
-Text GLabel 8200 5500 2    50   BiDi ~ 0
+Text GLabel 8200 5200 2    50   BiDi ~ 0
 SDA_VL53L0X
 Text GLabel 5150 6650 0    50   Input ~ 0
 6V_LM2596
@@ -246,7 +238,7 @@ Text GLabel 6350 5100 2    50   BiDi ~ 0
 SDA_VL53L0X
 Text GLabel 6350 5200 2    50   Output ~ 0
 SCL_VL53L0X
-Text GLabel 5350 4300 0    50   Input ~ 0
+Text GLabel 5350 4600 0    50   Input ~ 0
 SIGNAL_MICROSTART
 Text GLabel 6350 4700 2    50   Input ~ 0
 ANALOG_LINE1
@@ -255,13 +247,13 @@ ANALOG_LINE2
 $Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 60BCBAF1
-P 1950 6950
-F 0 "J7" H 1868 7167 50  0000 C CNN
-F 1 "Conn_MOTOR_LEFT" H 1868 7076 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Horizontal" H 1950 6950 50  0001 C CNN
-F 3 "~" H 1950 6950 50  0001 C CNN
-	1    1950 6950
-	-1   0    0    -1  
+P 1950 7050
+F 0 "J7" H 1868 7267 50  0000 C CNN
+F 1 "Conn_MOTOR_LEFT" H 1868 7176 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Horizontal" H 1950 7050 50  0001 C CNN
+F 3 "~" H 1950 7050 50  0001 C CNN
+	1    1950 7050
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2150 6950 2800 6950
@@ -270,13 +262,13 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J8
 U 1 1 60BCDDB0
-P 4300 7150
-F 0 "J8" H 4218 7367 50  0000 C CNN
-F 1 "Conn_MOTOR_RIGHT" H 4218 7276 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Horizontal" H 4300 7150 50  0001 C CNN
-F 3 "~" H 4300 7150 50  0001 C CNN
-	1    4300 7150
-	-1   0    0    -1  
+P 4300 7250
+F 0 "J8" H 4218 7467 50  0000 C CNN
+F 1 "Conn_MOTOR_RIGHT" H 4218 7376 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Horizontal" H 4300 7250 50  0001 C CNN
+F 3 "~" H 4300 7250 50  0001 C CNN
+	1    4300 7250
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4500 7150 5150 7150
@@ -286,9 +278,9 @@ Text GLabel 3600 6650 2    50   Input ~ 0
 PWM_MOTOR_LEFT
 Text GLabel 5950 7250 2    50   Input ~ 0
 PWM_MOTOR_RIGHT
-Text GLabel 5350 5100 0    50   Output ~ 0
+Text GLabel 5350 5000 0    50   Output ~ 0
 PWM_MOTOR_LEFT
-Text GLabel 5350 5200 0    50   Output ~ 0
+Text GLabel 5350 5100 0    50   Output ~ 0
 PWM_MOTOR_RIGHT
 Text GLabel 3600 6750 2    50   Input ~ 0
 BIT2_MOTOR_LEFT
@@ -298,27 +290,27 @@ Text GLabel 5950 7050 2    50   Input ~ 0
 BIT1_MOTOR_RIGHT
 Text GLabel 5950 7150 2    50   Input ~ 0
 BIT2_MOTOR_RIGHT
-Text GLabel 5350 4600 0    50   Output ~ 0
-BIT1_MOTOR_LEFT
-Text GLabel 5350 4700 0    50   Output ~ 0
-BIT2_MOTOR_LEFT
 Text GLabel 5350 4800 0    50   Output ~ 0
-BIT1_MOTOR_RIGHT
+BIT1_MOTOR_LEFT
 Text GLabel 5350 4900 0    50   Output ~ 0
+BIT2_MOTOR_LEFT
+Text GLabel 5350 5300 0    50   Output ~ 0
+BIT1_MOTOR_RIGHT
+Text GLabel 5350 5200 0    50   Output ~ 0
 BIT2_MOTOR_RIGHT
-Text GLabel 5350 5000 0    50   Output ~ 0
+Text GLabel 5350 4700 0    50   Output ~ 0
 STBY_TB6612FNG
 Text GLabel 3600 6950 2    50   Input ~ 0
 STBY_TB6612FNG
 Text GLabel 5950 6950 2    50   Input ~ 0
 STBY_TB6612FNG
-NoConn ~ 2850 3700
-NoConn ~ 2850 4350
+NoConn ~ 2850 3800
+NoConn ~ 2850 4450
 Text GLabel 5350 4400 0    50   Input ~ 0
 DISTANCE_01
 Text GLabel 5350 4500 0    50   Input ~ 0
 DISTANCE_02
-Text GLabel 5350 5300 0    50   Input ~ 0
+Text GLabel 5350 4300 0    50   Input ~ 0
 DISTANCE_03
 Wire Notes Line style solid
 	4500 3150 7000 3150
@@ -383,4 +375,12 @@ Wire Notes Line style solid
 Wire Notes Line style solid
 	7100 2400 7100 3000
 NoConn ~ 5350 5400
+Text GLabel 8200 3800 2    50   UnSpc ~ 0
+GND
+Text GLabel 8200 3700 2    50   Input ~ 0
+5V_ARDUINO
+Text GLabel 8200 3600 2    50   Input ~ 0
+SCL_VL53L0X
+Text GLabel 8200 3500 2    50   BiDi ~ 0
+SDA_VL53L0X
 $EndSCHEMATC
